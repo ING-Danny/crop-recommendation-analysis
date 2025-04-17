@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IDEs
+.idea/
+
+# PyCharm
+*.iml
+
+# Test and Coverage reports
+*.coverage
+.coverage.*
+nosetests.xml
+pytest-debug.log
+test-results/
+
+# Distribution/Packaging
+*.egg
+*.egg-info
+dist/
+build/
+eggs/
+wheels/
+*.egg-info/
+
+# PyInstaller
+#  PyInstaller will create a build/ folder, a dist/ folder, and a .spec file.
+build/
+dist/
+*.spec
+
+# Docker
+.docker/
+
+# Virtual Environment
+# Uncomment the line below if you're using `virtualenv` or `pipenv`.
+# .env/
