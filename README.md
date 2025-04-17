@@ -24,11 +24,11 @@ Replace the file path in the code with the path to your own CSV file.
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/ING-Danny/crop-recommendation-analysis.git
 ```
 2. Change the working director
 ```bash 
-cd your-repository-name 
+cd crop-recommendation-analysis
 ```
 3. Run the python script 
 ```bash 
