@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt # Graficos
 import seaborn as sns # Graficas con mayor apoyo visual y estadisticas
 
 #Leemos el DataFrame Para esto se usa la ruta donde esta el archivo en tu caso cambia la ruta por donde este el archivo.csv
-df = pd.read_csv("C:/Users/danny/OneDrive/Escritorio/Universidad Danny/Quinto Semestre/Probabilidad Y Estadistica/Agricultura Inteligente/Crop_Recommendation.csv")
+df = pd.read_csv("Crop_Recommendation.csv")
 
 
 #Anlizamos como viene el DataFrame 
