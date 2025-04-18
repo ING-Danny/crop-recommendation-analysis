@@ -55,8 +55,18 @@ plt.ylabel('Precipitación', fontsize=14)
 
 
 plt.show()
+plt.figure(figsize=(10, 6))  # Tamaño de la figura
+sns.regplot(x='Nitrogen', y='Rainfall', data=df, scatter_kws={'s': 20, 'color': 'blue'}, line_kws={'color': 'red', 'lw': 2})
 
-print ("\n La desviacion de todos las columnas numericas ")
+
+plt.title('Nitrogeno Vs Precipitacion Y su linea de Tendencia', fontsize=16)
+plt.xlabel('Nitrogeno', fontsize=14)
+plt.ylabel('Precipitación', fontsize=14)
+
+
+plt.show()
+
+
 
 desviacion=df_numerical.std()
 
@@ -93,7 +103,4 @@ plt.pie(ph_counts, labels=ph_counts.index, autopct='%1.1f%%', startangle=140)
 plt.title('Distribución del tipo de pH en los suelos evaluados')
 plt.axis('equal')
 plt.show()
-
-
-
 
