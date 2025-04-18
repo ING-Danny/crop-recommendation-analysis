@@ -9,6 +9,7 @@ Before running the code, make sure you have the required libraries installed (I 
 ```bash
 pip install pandas matplotlib seaborn
 ```
+(If you want use other csv file) 
 Additionally, you'll need a CSV file with the following columns:
 
 - `Crop`: Type of crop
@@ -18,6 +19,8 @@ Additionally, you'll need a CSV file with the following columns:
 - `pH_Value`: pH of the soil
 
 Replace the file path in the code with the path to your own CSV file.
+
+Warning !!: In the line where the variable df is defined, if the script encounters any issues, simply replace 'Crop_Recommendation.csv' with the correct path to the CSV file on your machine.
 
 ## How to Run
 
