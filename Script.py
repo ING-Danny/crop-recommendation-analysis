@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt # Graficos
 import seaborn as sns # Graficas con mayor apoyo visual y estadisticas
 
 #Leemos el DataFrame Para esto se usa la ruta donde esta el archivo en tu caso cambia la ruta por donde este el archivo.csv
-df = pd.read_csv("Crop_Recommendation.csv")
+df = pd.read_csv("C:/Users/danny/OneDrive/Escritorio/Universidad Danny/Quinto Semestre/Probabilidad Y Estadistica/Agricultura Inteligente/Crop_Recommendation.csv")
 
 
 #Anlizamos como viene el DataFrame 
@@ -33,12 +33,11 @@ print(df_numerical.corr())
 #Ya teniendo los Datos vamos a obtener los graficos usando seaborn 
 
 plt.figure(figsize=(10, 6))  # Tamaño de la figura
-sns.regplot(x='Humidity', y='Temperature', data=df, scatter_kws={'s': 20, 'color': 'blue'}, line_kws={'color': 'red', 'lw': 2})
+sns.regplot(x='Temperature', y='Humidity', data=df, scatter_kws={'s': 20, 'color': 'blue'}, line_kws={'color': 'red', 'lw': 2})
 
-
-plt.title('Humedad vs Temperatura Y su linea de Tendencia', fontsize=16)
-plt.xlabel('Humedad', fontsize=14)
-plt.ylabel('Temperatura', fontsize=14)
+plt.title('Temperatura vs Humedad Y su linea de Tendencia', fontsize=16)
+plt.xlabel('Temperature', fontsize=14)
+plt.ylabel('Humidity', fontsize=14)
 
 
 plt.show()
@@ -46,22 +45,21 @@ plt.show()
 #Repetimos el proceso pero para otro proposito en este caso humedad vs precipitación
 
 plt.figure(figsize=(10, 6))  # Tamaño de la figura
-sns.regplot(x='Humidity', y='Rainfall', data=df, scatter_kws={'s': 20, 'color': 'blue'}, line_kws={'color': 'red', 'lw': 2})
+sns.regplot(x='Rainfall', y='Humidity', data=df, scatter_kws={'s': 20, 'color': 'blue'}, line_kws={'color': 'red', 'lw': 2})
 
 
-plt.title('Humedad vs Precipitación Y su linea de Tendencia', fontsize=16)
-plt.xlabel('Humedad', fontsize=14)
-plt.ylabel('Precipitación', fontsize=14)
+plt.title('Precipitación vs Humedad  Y su linea de Tendencia', fontsize=16)
+plt.xlabel('Precipitación', fontsize=14)
+plt.ylabel('Humedad', fontsize=14)
 
 
 plt.show()
 plt.figure(figsize=(10, 6))  # Tamaño de la figura
-sns.regplot(x='Nitrogen', y='Rainfall', data=df, scatter_kws={'s': 20, 'color': 'blue'}, line_kws={'color': 'red', 'lw': 2})
+sns.regplot(x='Rainfall', y='Nitrogen', data=df, scatter_kws={'s': 20, 'color': 'blue'}, line_kws={'color': 'red', 'lw': 2})
 
-
-plt.title('Nitrogeno Vs Precipitacion Y su linea de Tendencia', fontsize=16)
-plt.xlabel('Nitrogeno', fontsize=14)
-plt.ylabel('Precipitación', fontsize=14)
+plt.title('Precipitacion Vs Nitrogeno Y su linea de Tendencia', fontsize=16)
+plt.xlabel('Precipitacion', fontsize=14)
+plt.ylabel('Nitrogeno', fontsize=14)
 
 
 plt.show()
